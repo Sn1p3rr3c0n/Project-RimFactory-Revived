@@ -14,7 +14,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore build Source/Source.sln
+      run: dotnet restore Source/Source.sln
     - name: Build
       run: dotnet build Source/Source.sln --no-restore
     - uses: actions/upload-artifact@v2
