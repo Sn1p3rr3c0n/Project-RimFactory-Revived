@@ -24,6 +24,7 @@ jobs:
         body: "#body"
         token: ${{ secrets.GITHUB_TOKEN }}
         generateReleaseNotes: true
+        tag: 2.3.0
 
 #    - uses: actions/upload-artifact@v2
 #      with:
