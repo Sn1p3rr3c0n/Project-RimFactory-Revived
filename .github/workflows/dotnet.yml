@@ -17,10 +17,18 @@ jobs:
       run: dotnet restore Source/Source.sln
     - name: Build
       run: dotnet build Source/Source.sln --no-restore
-    - uses: actions/upload-artifact@v2
+    - uses: ncipollo/release-action@v1
       with:
-        name: NewRelease
-        path: .
+        artifacts: "Assemblies/ProjectRimFactory.dll"
+        #bodyFile: "body.md"
+        body: "#body"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        generateReleaseNotes: true
+
+#    - uses: actions/upload-artifact@v2
+#      with:
+#        name: NewRelease
+#        path: .
 #    - name: Copy
 #      uses: andstor/copycat-action@v3
 #      with:
