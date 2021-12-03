@@ -23,6 +23,7 @@ namespace ProjectRimFactory.AutoMachineTool
         private int productLimitCount = 100;
         private bool productLimitation = false;
         private bool countStacks = false;
+        private bool test = false;
 
         private ILoadReferenceable slotGroupParent = null;
         private string slotGroupParentLabel = null;
@@ -30,6 +31,7 @@ namespace ProjectRimFactory.AutoMachineTool
         public override void ExposeData()
         {
             base.ExposeData();
+            test = true;
 
             Scribe_Values.Look<int>(ref this.productLimitCount, "productLimitCount", 100);
             Scribe_Values.Look<bool>(ref this.productLimitation, "productLimitation", false);
