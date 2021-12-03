@@ -17,7 +17,15 @@ jobs:
       run: dotnet restore Source/Source.sln
     - name: Build
       run: dotnet build Source/Source.sln --no-restore
-    - uses: actions/upload-artifact@v2
+#    - uses: actions/upload-artifact@v2
+#      with:
+#        name: ProjectRimFactory.dll
+#        path: Assemblies/ProjectRimFactory.dll
+    - name: Copy
+      uses: andstor/copycat-action@v3
       with:
-        name: ProjectRimFactory.dll
-        path: Assemblies/ProjectRimFactory.dll
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: Assemblies/ProjectRimFactory.dll
+        dst_owner: Sn1p3rr3c0n
+        dst_repo_name: Project-RimFactory-Revived
+        commit_message: "Updated dll"
