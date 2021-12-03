@@ -31,7 +31,9 @@ namespace ProjectRimFactory.AutoMachineTool
         public override void ExposeData()
         {
             base.ExposeData();
+            
             test = true;
+            if (test) test = false;
 
             Scribe_Values.Look<int>(ref this.productLimitCount, "productLimitCount", 100);
             Scribe_Values.Look<bool>(ref this.productLimitation, "productLimitation", false);
