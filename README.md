@@ -1,48 +1,5 @@
 # Project-RimFactory-Revived
 
-## Factorio Inspired Automation mod in RimWorld
-This is my overhaul of one of my favorite mods from B18 RW.
-I tried stay in line with how it was back then but expanding on functions and machines to great a even better story for it.
-
-Over the past month that I have been working on this mod, many great ppl have joined and contributed to make this mod truly amazing and better than I ever imagined.
-I truly appreciate what this has become, not just some modding experience, but a great little community of modders, helping on PRF and sharing skills across their own mods.
-
-This is still a work in progress project, and it probably always will be.
-However, we are very close to a stable release with version 2.5.0 which overhauled MANY mechanics.
-
-
-If you have any ideas, bugs or other things, feel free to share them with us with an issue, steam comment, or on our discord.
-
-
-
-
-## Idea behind this mod
-PRF is a mod that focuses on automating many task in Rimworld without going too far away from Vanilla balance.
-It fits well in conjunction with many other great mods, offering new playstyles.
-
-We have tried keep Core clean and not too unbalanced, and moving all the  OP stuff to PRF - Insanity and other sub mods instead.
-
-This mod adds many machines and new types of automation. You can now automate certain things in Rimworld that otherwise would have required pawns.
-Not every task can be automated though. you will still need pawns to eat your food, defend your colony, raid, trade, and research.
-
-This adds new Factorio-like buildings that have a Input and a Output and will work unattendedly if you supply resources.
-It also adds conveyor belts that let you move things around on your base.
-
-There are also new storage options too.
-
-We have worked towards more balance and lore, so it now has more ingame content, and info/story/flavour text to be more immersive.
-
-
-
-## PRF Series
-Project RimFactory - Core (This one)
-Project RimFactory - Lite (Cut down version made as a replacement for Industrial roller)
-Project RimFactory - Drones (Some drone stations, this will get a update later)
-Project RimFactory - Insanity (Equivalent Exchange, Alchemy, and crazy scientist?)
-Project RimFactory - Materials (A lite Material mod focused around factorio/satisfactory genre)
-Project RimFactory - Extras (Random stuff, comming later...)
-ATS - Framework (will be a future framework where many universal stuff will go)
-
 
 
 # Credits:
