@@ -23,14 +23,13 @@ jobs:
           git config --global user.email 'Sn1p3rr3c0n@users.noreply.github.com'
           git commit -am "Updated dll"
           git push
-#    - uses: ncipollo/release-action@v1
-#      with:
-#        artifacts: "Assemblies/ProjectRimFactory.dll"
-#        #bodyFile: "body.md"
-#        body: "#body"
-#        token: ${{ secrets.GITHUB_TOKEN }}
-#        generateReleaseNotes: true
-#        tag: 2.3.0
+    - uses: ncipollo/release-action@v1
+      with:
+        #bodyFile: "body.md"
+        body: "some manual content"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        generateReleaseNotes: true
+        tag: 2.3.1
 
 #    - uses: actions/upload-artifact@v2
 #      with:
