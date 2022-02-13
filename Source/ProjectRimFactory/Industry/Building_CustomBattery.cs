@@ -28,7 +28,7 @@ namespace ProjectRimFactory.Industry
             r.fillPercent = comp.StoredEnergy / comp.Props.storedEnergyMax;
             r.filledMat = BatteryBarFilledMat;
             r.unfilledMat = BatteryBarUnfilledMat;
-            r.margin = 0.15f;
+            //r.margin = 0.15f;
             r.rotation = Rotation;
             GenDraw.DrawFillableBar(r);
             if (ticksToExplode > 0 && Spawned)
