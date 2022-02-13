@@ -37,6 +37,7 @@ jobs:
       with:
         #bodyFile: "body.md"
         #body: "some manual content"
+        draft: true
         token: ${{ secrets.GITHUB_TOKEN }}
         generateReleaseNotes: true
         tag: v${{ steps.get_mv.outputs.info }}
