@@ -27,13 +27,19 @@ jobs:
           git config --global user.email 'Sn1p3rr3c0n@users.noreply.github.com'
           git commit -am "Updated dll"
           git push
+    - name: Get XML Version
+      id: get_mv
+      uses: mavrosxristoforos/get-xml-info@1.0
+      with:
+        xml-file: 'About/Manifest.xml'
+        xpath: '//version'
     - uses: ncipollo/release-action@v1
       with:
         #bodyFile: "body.md"
-        body: "some manual content"
+        #body: "some manual content"
         token: ${{ secrets.GITHUB_TOKEN }}
         generateReleaseNotes: true
-        tag: v2.3.1
+        tag: v${{ steps.get_mv.outputs.info }}
 
 #    - uses: actions/upload-artifact@v2
 #      with:
